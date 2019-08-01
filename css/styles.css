@@ -1,0 +1,34 @@
+#piz{
+    position :absolute;
+    transform: translate(-60%,-50%);
+    top:40%;
+    left:50%;
+    text-align: center;
+    width:100px;
+    height: 100px;
+    color:red;
+    font-size: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:oblique 10deg;;
+}
+
+.topnav {
+    background-color: #333;
+    border-radius: 70px;
+    overflow: hidden;
+    font-size: 40px;
+    text-align: center;
+  }
+  .topnav a {
+    float:center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 22px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  

@@ -1,0 +1,13 @@
+$(document).ready(function(){
+    $("#piz").hide();
+    $(".top").css({
+      opacity:1
+})
+$(".img1").hover(function(){
+    $(this).css({opacity:.8});
+    $("#piz").fadeIn();
+  },function(){
+    $(this).stop().css({opacity:1})
+    $("#piz").fadeOut();
+  });
+})
