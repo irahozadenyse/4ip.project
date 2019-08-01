@@ -22,11 +22,13 @@
             <img class="img1" src="img/19_Pizza.jpg" width=1270 height=530>
         </div>
          <div class="men">
+             <center>
              <div class="row">
                  <div class="col-md-12">
                      <h1>Menu</h1>
                  </div>
              </div>
+             
              <div class="row">
                  <div class="col-md-3">
                      <img src="">
@@ -34,7 +36,84 @@
              </div>
          </div>
 
-         
+         <center>
+                <div id ="fill" >
+                <legend id="order">  <b>Order pizza you want</b></legend>
+                <div class="form-group">
+                   
+                   <label for="sel1">Sellect Crusters you want:</label><br>
+                   <select class="control" id="sel1">
+                        <option value="new haven style"> new haven style </option>
+                        <option value="st.louis style">st.louis style</option>
+                        <option value="neapolitian">neapolitian</option>
+                        <option value="new york style">new york style</option>
+                        <option value="double-dough">double-dough</option>
+                        <option value="detroit/sicilian style">detroit/sicilian style</option>
+                        <option value="chicago deep dish">chicago deep dish</option>
+                        <option value="flatbread/focaccia">flatbread/focaccia</option>
+                        <option value="gluten-free">gluten-free</option>
+                        <option value="vegan-friendly">vegan-friendly</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                   
+                    <label for="sel1">Select Toppings you want:</label><br>
+                    <select class="control" id="sel1">
+                         <option value="vagetables">vegetables</option>
+                         <option value="nuts">nuts</option>
+                         <option value="meats">meats</option>
+                         <option value="cheese">cheese</option>
+                         <option value="sea food">sea food</option>
+                         <option value="Herbs and Spîces">Herbs and Spîces</option>
+                       </select>
+                     </div>
+
+                     <div class="form-group">
+                            
+                     <label for="sel1">Select Flavours you want:</label><br>
+                     <select class="control" id="sel1">
+                          <option value="Double Cheese Pizza">Double Cheese Pizza</option>
+                          <option value="Gourmet"> Gourmet</option>
+                          <option>Mexican Green Wave</option>
+                          <option value="Peppy Paneer"> Peppy Paneer</option>
+                          <option value=" Margherita Pizza"> Margherita Pizza</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                   
+                      <label for="sel1">Select Size you want:</label><br>
+                      <select class="control" id="sel1">
+                           <option value="Small">Small</option>
+                           <option value="Medium">Medium</option>
+                           <option value="Large">Large</option>
+                           <option value="Extra-large">Extra-large</option>
+                         </select>
+                       </div>
+            
+                       <span class="btn btn-primary" id="add-menu">Another Order</span>
+                <input id="su"  type="button" value="send"><br>
+                    <div class="cont">   
+                <h2>CHECK:</h2>
+                <ol id="checks">
+      
+                </ol>
+              </div>
+      
+              <div class="col-md-6">
+                <div id="show-check">
+                  <h2></h2>
+                  <p>Crusters: <span class="crusters-name"></span></p>
+                  <p>Topping: <span class="topping-name"></span></p>
+                  <p>Flavour: <span class="flavour-name"></span></p>
+                  <p>Size: <span class="size-name"></span></p>
+                  <p>pizza price:</p>
+                  <ul id="pizzas">
+      
+                  </ul>
+                </div>
+              </div>        
         </div>
         <script src="js/jquery-3.4.1.js"></script>
         <script src="js/scripts.js"></script>

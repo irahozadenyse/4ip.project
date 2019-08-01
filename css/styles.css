@@ -14,10 +14,11 @@
 
 .topnav {
     background-color: #333;
-    border-radius: 70px;
+    border-radius: 50px;
     overflow: hidden;
     font-size: 40px;
     text-align: center;
+    width:1270px;
   }
   .topnav a {
     float:center;
@@ -30,5 +31,12 @@
   .topnav a:hover {
     background-color: #ddd;
     color: black;
+  }
+
+  #sel1{
+      text-align: center;
+      width:300px;
+      height:40px;
+      border-radius: 80px;
   }
   
