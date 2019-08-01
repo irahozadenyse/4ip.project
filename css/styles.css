@@ -56,9 +56,12 @@
   .me{
       color:white;
       margin-top:30px;
+      margin-bottom: 50px;
   }
   #menu{
       color:white;
+      margin-bottom: 40px;
+      top: 40px;
   }
 
   #fill{
@@ -79,4 +82,6 @@
   }
   #order{
       color:white;
+      margin-bottom: 40px;
+      font-size: 40px;
   }
