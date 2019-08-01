@@ -11,9 +11,9 @@
         <div class="container-fluid">
         <div class="topnav">
             <a class="active" href="#home">Home</a>
-            <a href="#menu" href="#menu">Menu</a>
-            <a href="#contact" href="contact">Contact</a>
-            <a href="#about" href="about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
         </div>
         </nav>
         
@@ -23,7 +23,8 @@
         </div>
          <div class="men">
              <center>
-             <div class="row">
+
+             <div id="menu">
                  <div class="col-md-12">
                      <h1>Menu</h1>
                  </div>
@@ -31,9 +32,35 @@
              
              <div class="row">
                  <div class="col-md-3">
-                     <img src="">
+                     <img src="img/Chicago-Beef-Calzone.jpg " width=300 height=200>
+                     <h2>This Chicago beef calzone</h2>
+                     <p class="me">A typical calzone is made from<br> 
+                 salted bread dough, baked in an oven <br>
+                 and is stuffed with salami, ham or <br>
+                 vegetables,mozzarella, ricotta and <br>
+                 Parmesan or pecorino cheese, as well <br>
+                 as an egg.</p>
                  </div>
+                 <div class="col-md-3">
+                    <img src="img/Pepperoni-Pizza-Roll-&-Chicago-Beef-Calzone.jpg" width=300 height=200>
+                    <h2>This Pepperoni pizza roll</h2>
+                    <p class="me"> Pepperoni Pizza Rolls are a<br>
+                 quick and easy recipe! With only 5 minutes of<br>
+                 prep time, these delicious pizza rolls are made<br>
+                 with pizza dough and filled with pepperoni, <br>
+                 mozzarella cheese, Italian spices and topped<br>
+                 with garlic butter.Serve at your next party!</p>
+                    </div>
+                    <div class="col-md-3">
+                            <img src="img/Double-Dish-Pizza.jpg" width=300 height=200>
+                            <h2>This double dish pizza</h2>
+                        </div>
+                        <div class="col-md-3">
+                                <img src="img/Deep-Dish-All-Meat-Pizza.jpg" width=250 height=200>
+                                <h2>This Deep dish meat pizza</h2>
+                            </div>     
              </div>
+
          </div>
 
          <center>
@@ -43,16 +70,13 @@
                    
                    <label for="sel1">Sellect Crusters you want:</label><br>
                    <select class="control" id="sel1">
-                        <option value="new haven style"> new haven style </option>
-                        <option value="st.louis style">st.louis style</option>
-                        <option value="neapolitian">neapolitian</option>
-                        <option value="new york style">new york style</option>
-                        <option value="double-dough">double-dough</option>
-                        <option value="detroit/sicilian style">detroit/sicilian style</option>
-                        <option value="chicago deep dish">chicago deep dish</option>
-                        <option value="flatbread/focaccia">flatbread/focaccia</option>
-                        <option value="gluten-free">gluten-free</option>
-                        <option value="vegan-friendly">vegan-friendly</option>
+                        
+                        <option value="neapolitian">neapolitian  $3</option>
+                        <option value="new york style">new york style $3</option>
+                        <option value="chicago deep dish">chicago deep dish $4</option>
+                        <option value="flatbread/focaccia">flatbread/focaccia $2</option>
+                        <option value="gluten-free">gluten-free $3</option>
+                        <option value="vegan-friendly">vegan-friendly $4</option>
                       </select>
                     </div>
 
@@ -60,12 +84,12 @@
                    
                     <label for="sel1">Select Toppings you want:</label><br>
                     <select class="control" id="sel1">
-                         <option value="vagetables">vegetables</option>
-                         <option value="nuts">nuts</option>
-                         <option value="meats">meats</option>
-                         <option value="cheese">cheese</option>
-                         <option value="sea food">sea food</option>
-                         <option value="Herbs and Spîces">Herbs and Spîces</option>
+                         <option value="vagetables">vegetables    $2</option>
+                         <option value="nuts">nuts    $1 </option>
+                         <option value="meats">meats    $3</option>
+                         <option value="cheese">cheese    $1.50</option>
+                         <option value="sea food">sea food    $2.00</option>
+                         <option value="Herbs and Spîces">Herbs and Spîces    $1.50 </option>
                        </select>
                      </div>
 
@@ -73,11 +97,11 @@
                             
                      <label for="sel1">Select Flavours you want:</label><br>
                      <select class="control" id="sel1">
-                          <option value="Double Cheese Pizza">Double Cheese Pizza</option>
-                          <option value="Gourmet"> Gourmet</option>
-                          <option>Mexican Green Wave</option>
-                          <option value="Peppy Paneer"> Peppy Paneer</option>
-                          <option value=" Margherita Pizza"> Margherita Pizza</option>
+                          <option value="Double Cheese Pizza">Double Cheese Pizza    $3</option>
+                          <option value="Gourmet"> Gourmet   $2</option>
+                          <option value="Mexican Green Wave">Mexican Green Wave    $1.5</option>
+                          <option value="Peppy Paneer"> Peppy Paneer    $1.5</option>
+                          <option value=" Margherita Pizza"> Margherita Pizza    $1.5</option>
                         </select>
                       </div>
 
@@ -85,33 +109,28 @@
                    
                       <label for="sel1">Select Size you want:</label><br>
                       <select class="control" id="sel1">
-                           <option value="Small">Small</option>
-                           <option value="Medium">Medium</option>
-                           <option value="Large">Large</option>
-                           <option value="Extra-large">Extra-large</option>
+                           <option value="Small">Small    $1.5</option>
+                           <option value="Medium">Medium    $3</option>
+                           <option value="Large">Large    $4.5</option>
+                           <option value="Extra-large">Extra-large    $6</option>
                          </select>
                        </div>
             
                        <span class="btn btn-primary" id="add-menu">Another Order</span>
-                <input id="su"  type="button" value="send"><br>
-                    <div class="cont">   
-                <h2>CHECK:</h2>
-                <ol id="checks">
-      
-                </ol>
-              </div>
+                <input id="su"  type="button" value="Check out"><br>
+                    <div class="cont"> 
       
               <div class="col-md-6">
                 <div id="show-check">
                   <h2></h2>
-                  <p>Crusters: <span class="crusters-name"></span></p>
+                  <p>Cruster: <span class="crusters-name"></span></p>
                   <p>Topping: <span class="topping-name"></span></p>
                   <p>Flavour: <span class="flavour-name"></span></p>
                   <p>Size: <span class="size-name"></span></p>
-                  <p>pizza price:</p>
-                  <ul id="pizzas">
+                  <p>Pizza price:</p>
+                  <ol id="pizzas">
       
-                  </ul>
+                  </ol>
                 </div>
               </div>        
         </div>

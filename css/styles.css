@@ -39,4 +39,21 @@
       height:40px;
       border-radius: 80px;
   }
-  
+  h2{
+      font-size: 20px;
+      font-style: oblique;
+      margin-top: 10px;
+      color:white;
+
+      
+      
+  }
+  .men{
+      background-color: #333
+  }
+  .me{
+      color:white;
+  }
+  #menu{
+      color:white;
+  }
