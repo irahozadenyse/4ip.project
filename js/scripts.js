@@ -1,20 +1,3 @@
-$(document).ready(function(){
-    $("#piz").hide();
-    $(".top").css({
-      opacity:1
-})
-$(".img1").hover(function(){
-    $(this).css({opacity:.8});
-    $("#piz").fadeIn();
-  },function(){
-    $(this).stop().css({opacity:1})
-    $("#piz").fadeOut();
-  });
-
-
-
-
-
 
 function Information(crust, topping,flavour,size) {
   this.crut = crust;
@@ -26,6 +9,35 @@ function Information(crust, topping,flavour,size) {
  Information.prototype.fullInformation= function() {
   return this.crust + " " + this.topping+" "+this.flavour+" "+this.size;
  }
+
+
+function resetFields() {
+  $("select#sel1").val("");
+  $("select#sel2").val("");
+  $("select#sel3").val("");
+  $("select#sel4").val("");
+  
+}
+ 
+
+
+
+$(document).ready(function(){
+  $("#piz").hide();
+  $(".top").css({
+    opacity:1
+})
+$(".img1").hover(function(){
+  $(this).css({opacity:.8});
+  $("#piz").fadeIn();
+},function(){
+  $(this).stop().css({opacity:1})
+  $("#piz").fadeOut();
+});
+
+
+ 
+
 
 
   $("#add-menu").click(function() {
@@ -76,15 +88,46 @@ function Information(crust, topping,flavour,size) {
             '<option value="Extra-large">Extra-large    $6</option>'+
           '</select>'+
         '</div>')
-
-      }) 
-    });
  
+  });
+  $("#fill").submit(function(event) {
+    event.preventDefault();
 
+    var selectedCrust = $("select#sel1").val();
+    var selectedTopping=$("select#sel2").val();
+    var selectedFlavour = $("select#sel3").val();
+    var selectedSize = $("select#sel4").val();
+   var newInformation = new Information (selectedCrust,selectedTopping,selectedFlavour,selectedSize );
+  });
+  console.log(newInformation)
+    // $(".new-address").each(function() {
+    //   var inputtedStreet = $(this).find("input.new-street").val();
+    //   var inputtedCity = $(this).find("input.new-city").val();
+    //   var inputtedCounty = $(this).find("input.new-county").val();
+    //   var newAddress = new Address(inputtedStreet, inputtedCity, inputtedCounty)
+    //   newContact.addresses.push(newAddress)
+    // });
+
+    $("ol#pizzas").append("<li><span class='information'>" + newInformation.fullInformation() + "</span></li>");
+
+    $(".information").last().click(function() {
+      $("#show-check").show();
+      $("#show-check h2").text(newInformation.fullInformation());
+      $(".crusters-now").text(newInformation.crust);
+      $(".topping-now").text(newInformation.topping);
+      $(".flavour-now").text(newInformation.flavour);
+      $(".size-now").text(newInformation.size);
+      
+    });
+
+    $("select#sel1").val();
+    $("select#sel2").val();
+    $("select#sel3").val();
+    $("select#sel4").val();
+    
+
+})
   
-
-
-
 
 
 
