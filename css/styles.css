@@ -96,7 +96,7 @@
     
 }
 .know{
-    background-color: #333;
+    background-color:darkred;
     width:1270px;
     height:605px;
 }
@@ -109,5 +109,41 @@
 .cont{
     background-color:black;
     width:1270px;
+    height:300px;
     
+}
+.fa {
+    padding: 20px;
+    font-size: 100px;
+    width: 50px;
+    text-align: center;
+   color:white;
+   background-color:red;
+    border-radius: 70%;
+  }
+.ico{
+    color:white;
+}
+#sel2{
+    text-align: center;
+    width:300px;
+    height:40px;
+    border-radius: 80px;
+    color:black;
+}
+
+#sel3{
+    text-align: center;
+    width:300px;
+    height:40px;
+    border-radius: 80px;
+    color:black;
+}
+
+#sel4{
+    text-align: center;
+    width:300px;
+    height:40px;
+    border-radius: 80px;
+    color:black;
 }

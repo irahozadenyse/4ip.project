@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+            <link href="css/styles.css" rel="stylesheet" type="text/css">
+            <link href="4ip-project/order.html" rel="stylesheet" type="text/css">
+            <title>Order</title>
+    </head>
+    <body>
+            <div class="container-fluid">
+            <div id="order">
+                    <center>
+                           <div id ="fill" >
+                           <legend id="orde">  <b>Order pizza you want</b></legend>
+                           <div class="form-group">
+                              
+                              <label for="sel1">Sellect Crusters you want:</label><br>
+                              <select class="control" id="sel1">
+                                   
+                                   <option value="neapolitian">neapolitian  $3 </option>
+                                   <option value="new york style">new york style $3 </option>
+                                   <option value="chicago deep dish">chicago deep dish $4 </option>
+                                   <option value="flatbread/focaccia">flatbread/focaccia $2 </option>
+                                   <option value="gluten-free">gluten-free $3 </option>
+                                   <option value="vegan-friendly">vegan-friendly $4 </option>
+                                 </select>
+                               </div>
+           
+                               <div class="form-group">
+                              
+                               <label for="sel1">Select Toppings you want:</label><br>
+                               <select class="control" id="sel2">
+                                    <option value="vagetables">vegetables    $2</option>
+                                    <option value="nuts">nuts    $1 </option>
+                                    <option value="meats">meats    $3</option>
+                                    <option value="cheese">cheese    $1.50</option>
+                                    <option value="sea food">sea food    $2.00</option>
+                                    <option value="Herbs and Spîces">Herbs and Spîces    $1.50 </option>
+                                  </select>
+                                </div>
+           
+                                <div class="form-group">
+                                       
+                                <label for="sel1">Select Flavours you want:</label><br>
+                                <select class="control" id="sel3">
+                                     <option value="Double Cheese Pizza">Double Cheese Pizza    $3</option>
+                                     <option value="Gourmet"> Gourmet   $2</option>
+                                     <option value="Mexican Green Wave">Mexican Green Wave    $1.5</option>
+                                     <option value="Peppy Paneer"> Peppy Paneer    $1.5</option>
+                                     <option value=" Margherita Pizza"> Margherita Pizza    $1.5</option>
+                                   </select>
+                                 </div>
+           
+                                 <div class="form-group">
+                              
+                                 <label for="sel1">Select Size you want:</label><br>
+                                 <select class="control" id="sel4">
+                                      <option value="Small">Small    $1.5</option>
+                                      <option value="Medium">Medium    $3</option>
+                                      <option value="Large">Large    $4.5</option>
+                                      <option value="Extra-large">Extra-large    $6</option>
+                                    </select>
+                                  </div>
+                       
+                                  <span class="btn btn-primary" id="add-menu">Another Order</span>
+                           <input id="su"  type="button" value="Check out"><br>
+                               <div class="cont"> 
+                 
+                         <div class="col-md-6">
+                           <div id="show-check">
+                             <h2></h2>
+                             <p>Cruster: <span class="crusters-name"></span></p>
+                             <p>Topping: <span class="topping-name"></span></p>
+                             <p>Flavour: <span class="flavour-name"></span></p>
+                             <p>Size: <span class="size-name"></span></p>
+                             <p>Pizza price:</p>
+                             <ol id="pizzas">
+                 
+                             </ol>
+                           </div>
+                         </div>
+                         </div>
+                       </div> 
+                       </div> 
+                     </div>
+            <script src="js/jquery-3.4.1.js"></script>
+            <script src="js/scripts.js"></script>
+    </body>
+</html>
