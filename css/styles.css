@@ -67,6 +67,8 @@
   #fill{
       background-color: rgb(178, 34, 34);
       width:1270px;
+      height:605px;
+      
   }
   
   #add-menu{
@@ -79,9 +81,33 @@
 
   #show-check{
       color:white;
+      display:none;
   }
-  #order{
+  #orde{
       color:white;
       margin-bottom: 40px;
       font-size: 40px;
   }
+
+  #about{
+    color:white;
+    margin-bottom: 40px;
+    top: 40px;
+    
+}
+.know{
+    background-color: #333;
+    width:1270px;
+    height:605px;
+}
+#contact{
+    color:white;
+    margin-bottom: 40px;
+    top: 40px;
+
+}
+.cont{
+    background-color:black;
+    width:1270px;
+    
+}
