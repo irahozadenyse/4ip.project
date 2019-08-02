@@ -1,30 +1,4 @@
-//Bussiness logic
-function Information(crust, topping,flavour,size) {
-  this.crut = crust;
-  this.topping = topping;
-  this.flavour = flavour;
-  this.size =size;
-}
-
- Contact.prototype.fullInformation= function() {
-  return this.crust + " " + this.topping+" "+this.flavour+" "+this.size;
- }
-
-
-function resetFields() {
-  $("select#sel1").val("");
-  $("select#sel2").val("");
-  $("select#sel3").val("");
-  $("select#sel4").val("");
-  
-}
- 
-
-// user interface logic
-
-$(document).ready(function() {
-
-  $(document).ready(function(){
+$(document).ready(function(){
     $("#piz").hide();
     $(".top").css({
       opacity:1
@@ -37,8 +11,25 @@ $(".img1").hover(function(){
     $("#piz").fadeOut();
   });
 
-  $("#add-address").click(function() {
-    $("#new-addresses").append('<label for="sel1">Sellect Crusters you want:</label><br>'+
+
+
+
+
+
+function Information(crust, topping,flavour,size) {
+  this.crut = crust;
+  this.topping = topping;
+  this.flavour = flavour;
+  this.size =size;
+}
+
+ Information.prototype.fullInformation= function() {
+  return this.crust + " " + this.topping+" "+this.flavour+" "+this.size;
+ }
+
+
+  $("#add-menu").click(function() {
+    $("#fill").append('<label for="sel1">Sellect Crusters you want:</label><br>'+
                               '<select class="control" id="sel1">'+
          
                              '<option value="neapolitian">neapolitian  $3</option>'+
@@ -84,46 +75,29 @@ $(".img1").hover(function(){
             '<option value="Large">Large    $4.5</option>'+
             '<option value="Extra-large">Extra-large    $6</option>'+
           '</select>'+
-        '</div>'+
- 
-});
-  $("form#new-contact").submit(function(event) {
-    event.preventDefault();
+        '</div>')
 
-    var selectedCrust = $("select#sel1").val();
-    var selectedTopping=$("select#sel2").val();
-    var selectedFlavour = $("select#sel3").val();
-    var selectedSize = $("select#sel4").val("");
-   var newInformation = new Information(selectedCrust,selectedTopping,selectedFlavour,selectedSize );
-
-    // $(".new-address").each(function() {
-    //   var inputtedStreet = $(this).find("input.new-street").val();
-    //   var inputtedCity = $(this).find("input.new-city").val();
-    //   var inputtedCounty = $(this).find("input.new-county").val();
-    //   var newAddress = new Address(inputtedStreet, inputtedCity, inputtedCounty)
-    //   newContact.addresses.push(newAddress)
-    // });
-
-    $("ul#contacts").append("<li><span class='contact'>" + newInformation.fullInformation() + "</span></li>");
-
-    $(".contact").last().click(function() {
-      $("#show-contact").show();
-      $("#show-contact h2").text(newContact.fullName());
-      $(".first-name").text(newContact.firstName);
-      $(".last-name").text(newContact.lastName);
-      $("ul#addresses").text("");
-      newContact.addresses.forEach(function(address) {
-        $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
-      });
+      }) 
     });
+ 
 
-    $("input#new-first-name").val("");
-    $("input#new-last-name").val("");
-    $("input.new-street").val("");
-    $("input.new-city").val("");
-    $("input.new-county").val("");
+  
 
-  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

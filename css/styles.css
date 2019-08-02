@@ -67,7 +67,7 @@
   #fill{
       background-color: rgb(178, 34, 34);
       width:1270px;
-      height:605px;
+      height:1000px;
       
   }
   
@@ -81,7 +81,7 @@
 
   #show-check{
       color:white;
-      display:none;
+     display: none;
   }
   #orde{
       color:white;
@@ -120,6 +120,8 @@
    color:white;
    background-color:red;
     border-radius: 70%;
+    margin-bottom: 40px;
+    margin-top: 30px;
   }
 .ico{
     color:white;
@@ -146,4 +148,7 @@
     height:40px;
     border-radius: 80px;
     color:black;
+}
+h1{
+    color:white;
 }
