@@ -3,15 +3,15 @@
     <head>
             <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
             <link href="css/styles.css" rel="stylesheet" type="text/css">
-            <link href="4ip-project/order.html" rel="stylesheet" type="text/css">
             <title>Order</title>
     </head>
     <body>
             <div class="container-fluid">
             
                     <center>
-                           <div id ="fill" >
+                           <form id ="fill" >
                            <legend id="orde">  <b>Order pizza you want</b></legend>
+                           <div class="yes">
                            <div class="form-group">
                               
                               <label for="sel1">Sellect Crusters you want:</label><br>
@@ -61,14 +61,14 @@
                                       <option value="Extra-large">Extra-large    $6</option>
                                     </select>
                                   </div>
-                                 
+                                </div>
                                   <span class="btn btn-primary" id="add-menu">Another Order</span>
-                           <input id="su"  type="submit" value="Check out"><br>
-                              
-                           
-                           <div class="pri">
-                        <h2>You have ordered</h2>
-                        <h2>Pizza price:</h2>
+                           <button id="su"  type="submit" >Check out</button>
+                              </form>
+                         
+                           <div id="pri">
+                        <h2>You have ordered:</h2>
+                        
                              <ol id="pizzas">
                  
                              </ol>
@@ -76,17 +76,21 @@
                             
                            <div id="show-check">
                                 
-                             <h3></h3>
+                             <h2></h2>
                              <p>Cruster: <span class="crusters-now"></span></p>
                              <p>Topping: <span class="topping-now"></span></p>
                              <p>Flavour: <span class="flavour-now"></span></p>
                              <p>Size: <span class="size-now"></span></p>
-                             
+                             <span>Pizza price:</span>
                            </div>
                          </div>
                          </div>
-                       </div> 
-                   
+                         
+                         
+                         
+                        
+                       
+                       
                      </div>
             <script src="js/jquery-3.4.1.js"></script>
             <script src="js/scripts.js"></script>

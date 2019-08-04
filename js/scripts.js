@@ -1,6 +1,6 @@
 
 function Information(crust, topping,flavour,size) {
-  this.crut = crust;
+  this.crust = crust;
   this.topping = topping;
   this.flavour = flavour;
   this.size =size;
@@ -41,10 +41,11 @@ $(".img1").hover(function(){
 
 
   $("#add-menu").click(function() {
-    $("#fill").append('<label for="sel1">Sellect Crusters you want:</label><br>'+
-                              '<select class="control" id="sel1">'+
+    $(".yes").append('<div class="form-group">'+
+              '<label for="sel1">Sellect Crusters you want:</label><br>'+
+              '<select class="control" id="sel1">'+
          
-                             '<option value="neapolitian">neapolitian  $3</option>'+
+              '<option value="neapolitian">neapolitian  $3</option>'+
          '<option value="new york style">new york style $3</option>'+
          '<option value="chicago deep dish">chicago deep dish $4</option>'+
          '<option value="flatbread/focaccia">flatbread/focaccia $2</option>'+
@@ -90,29 +91,23 @@ $(".img1").hover(function(){
         '</div>')
  
   });
-  $("#fill").submit(function(event) {
+  $("form#fill").submit(function(event) {
     event.preventDefault();
 
     var selectedCrust = $("select#sel1").val();
+    console.log(selectedCrust);
     var selectedTopping=$("select#sel2").val();
     var selectedFlavour = $("select#sel3").val();
     var selectedSize = $("select#sel4").val();
-   var newInformation = new Information (selectedCrust,selectedTopping,selectedFlavour,selectedSize );
-  });
-  console.log(newInformation)
-    // $(".new-address").each(function() {
-    //   var inputtedStreet = $(this).find("input.new-street").val();
-    //   var inputtedCity = $(this).find("input.new-city").val();
-    //   var inputtedCounty = $(this).find("input.new-county").val();
-    //   var newAddress = new Address(inputtedStreet, inputtedCity, inputtedCounty)
-    //   newContact.addresses.push(newAddress)
-    // });
+    var newInformation = new Information(selectedCrust,selectedTopping,selectedFlavour,selectedSize);
+  console.log(newInformation);
 
-    $("ol#pizzas").append("<li><span class='information'>" + newInformation.fullInformation() + "</span></li>");
 
-    $(".information").last().click(function() {
+  $("ol#pizzas").append("<li><span" + newInformation.fullInformation() + "</span></li>");
+    
+    $("#sub").last().click(function() {
       $("#show-check").show();
-      $("#show-check h2").text(newInformation.fullInformation());
+      $("#show-check h3").text(newInformation.fullInformation());
       $(".crusters-now").text(newInformation.crust);
       $(".topping-now").text(newInformation.topping);
       $(".flavour-now").text(newInformation.flavour);
@@ -124,11 +119,11 @@ $(".img1").hover(function(){
     $("select#sel2").val();
     $("select#sel3").val();
     $("select#sel4").val();
-    
+ 
+  });
 
 })
   
-
 
 
 

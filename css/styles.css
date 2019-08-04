@@ -153,3 +153,11 @@ h1{
 .cont{
     background-color: black;
 }
+#pri{
+    background-color: #333;
+    color:white;
+    float: right;
+    width:470px;
+    margin-top:-800px;
+    height:400px;
+}
