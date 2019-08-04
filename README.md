@@ -1,9 +1,10 @@
 # 4ip.project
-## PIZZA PARLOR
-<img src="img/19_Pizza.jpg">
+ <img src="img/download.jpeg" width=100 height= 80>
+  ## PIZZA PARLOR
+<img src="img/19_Pizza.jpg" width=1000 height=500>
   PIZZA PARLOR As a restaurant, pizza maker and caring company, Pizza delivers.<br> 
 We provide a flavourful, varied and high-quality menu to pizza-lovers of all ages<br>
- and tastes. As a result, our organization has become a leader in the quick service. <br>
+ and tastes. As a result, our organization has become a leader in the quick service. 
 ### IRAHOZA Denyse
 
 ## Description
@@ -42,3 +43,5 @@ Requirement include form which show type of pizza he want,alert telling user tha
 ### License
 
 Copyright (c) {2019} **{ IRAHOZA Denyse}** 
+
+<img src="img/istockphoto-854564820-612x612.jpg" width=80 height=70>
