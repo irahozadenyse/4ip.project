@@ -104,7 +104,7 @@
     color:white;
     margin-bottom: 40px;
     top: 40px;
-
+  
 }
 
     
@@ -148,4 +148,8 @@
 }
 h1{
     color:white;
+}
+
+.cont{
+    background-color: black;
 }
