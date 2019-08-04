@@ -1,11 +1,14 @@
 # 4ip.project
  <img src="img/download.jpeg" width=100 height= 80>
-  ## PIZZA PARLOR
+ 
+  ##  PIZZA PARLOR
 <img src="img/19_Pizza.jpg" width=1000 height=500>
   PIZZA PARLOR As a restaurant, pizza maker and caring company, Pizza delivers.<br> 
 We provide a flavourful, varied and high-quality menu to pizza-lovers of all ages<br>
- and tastes. As a result, our organization has become a leader in the quick service. 
-### IRAHOZA Denyse
+ and tastes. As a result, our organization has become a leader in the quick service. <br>
+
+
+#  IRAHOZA Denyse
 
 ## Description
 #### about us
