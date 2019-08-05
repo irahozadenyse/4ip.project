@@ -8,6 +8,7 @@ We provide a flavourful, varied and high-quality menu to pizza-lovers of all age
  and tastes. As a result, our organization has become a leader in the quick service. <br>
 
 
+
 #  IRAHOZA Denyse
 
 ## Description
@@ -37,6 +38,9 @@ Requirement include form which show type of pizza he want,alert telling user tha
 * css(styles.css and bootstrap)
 * jquery
 * javascripts
+
+## link for this project
+<link file:///home/wecode/Documents/moringa-school-projects/4ip-project/index.html#home>
  ## Support and contact details
 #### contact us
 * tel:0783260920
