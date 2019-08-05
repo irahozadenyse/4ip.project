@@ -155,10 +155,7 @@ $(".img1").hover(function(){
 
 
 
-// $("button#yes".click(function(){
-//   prompt("enter your name and address");
-//   alert("you are going to get it soon");
-// })
+
 
 // )
 // var priCrust={
@@ -195,55 +192,74 @@ $(".img1").hover(function(){
 //   Extralarge:6
 // }
  if(selectedCrust === "neapolitian" || selectedCrust== "newyorkstyle" || selectedCrust=="glutenfree" && selectedTopping === "vegetables" || selectedTopping=="seafood" && selectedFlavour === "DoubleCheesePizza" || selectedFlavour=="Gourmet" && selectedSize === "Small"){
-  console.log(4.5);
+  j=7;
+  $("span.price" ).text (j +'$')
 }else if(selectedCrust === "neapolitian" || selectedCrust== "newyorkstyle" || selectedCrust=="glutenfree" && selectedTopping === "nuts" || selectedTopping=="HerbsandSpices" && selectedFlavour === "MexicanGreenWave" || selectedFlavour=="PeppyPaneer" || selectedFlavour=="MargheritaPizza" && selectedSize === "Small"){
-console.log(5);
+j=5;
+$("span.price" ).text (j +'$')
 }
 else if(selectedCrust === "neapolitian" || selectedCrust== "newyorkstyle" || selectedCrust=="glutenfree" && selectedTopping === "meats" || selectedTopping=="cheese" && selectedFlavour === "MexicanGreenWave" || selectedFlavour=="PeppyPaneer" || selectedFlavour=="MargheritaPizza" && selectedSize === "Small"){ 
-  console.log(6);
+  j=6;
+  $("span.price" ).text ( j +'$')
 }
 else if(selectedCrust === "chicagodeepdish" || selectedCrust== "flatbreadFocaccia"  && selectedTopping === "vegetables" || selectedTopping=="seafood" && selectedFlavour === "DoubleCheesePizza" || selectedFlavour=="Gourmet" && selectedSize === "Small"){ 
-console.log(7)
+j=10;
+$("span.price" ).text (j +'$')
 }
 else if(selectedCrust === "chicagodeepdish" || selectedCrust== "flatbreadFocaccia"  && selectedTopping === "nuts" || selectedTopping=="HerbsandSpices" && selectedFlavour === "DoubleCheesePizza" || selectedFlavour=="Gourmet" && selectedSize === "Small"){ 
-  console.log(8)
+  j=8
+  $("span.price" ).text (j +'$')
 }
 else if(selectedCrust === "neapolitian" || selectedCrust== "newyorkstyle" || selectedCrust=="glutenfree" && selectedTopping === "vegetables" || selectedTopping=="seafood" && selectedFlavour === "DoubleCheesePizza" || selectedFlavour=="Gourmet" && selectedSize === "Medium"){ 
-    console.log(8.5);
+    j=8.5;
+    $("span.price" ).text (j +'$')
 }
-else if(selectedCrust === "neapolitian" || selectedCrust== "newyorkstyle" || selectedCrust=="glutenfree" && selectedTopping === "nuts" || selectedTopping=="HerbsandSpices" && selectedFlavour === "MexicanGreenWave" || selectedFlavour=="PeppyPaneer" || selectedFlavour=="MargheritaPizza" && selectedSize === "Medium"){
-    console.log(9);
+else if( selectedCrust== "newyorkstyle" || selectedCrust=="glutenfree" && selectedTopping === "nuts" || selectedTopping=="HerbsandSpices" && selectedFlavour === "MexicanGreenWave" || selectedFlavour=="PeppyPaneer" || selectedFlavour=="MargheritaPizza" && selectedSize === "Medium"){
+    j=9;
+    $("span.price" ).text (j +'$')
 }
 else if(selectedCrust === "chicagodeepdish" || selectedCrust== "flatbreadFocaccia"  && selectedTopping === "vegetables" || selectedTopping=="seafood" && selectedFlavour === "DoubleCheesePizza" || selectedFlavour=="Gourmet" && selectedSize === "Mediu"){ 
-  console.log(9.5);
+  j=9.5;
+  $("span.price" ).text (j +'$')
 }   
 
 else if(selectedCrust === "neapolitian" || selectedCrust== "newyorkstyle" || selectedCrust=="glutenfree" && selectedTopping === "nuts" || selectedTopping=="HerbsandSpices" && selectedFlavour === "MexicanGreenWave" || selectedFlavour=="PeppyPaneer" || selectedFlavour=="MargheritaPizza" && selectedSize === "Large"){
-  console.log(10);
+  j=10;
+  $("span.price" ).text (j +'$')
   }
 
   else if(selectedCrust === "neapolitian" || selectedCrust== "newyorkstyle" || selectedCrust=="glutenfree" && selectedTopping === "vegetables" || selectedTopping=="seafood" && selectedFlavour === "DoubleCheesePizza" || selectedFlavour=="Gourmet" && selectedSize === "Large"){ 
-    console.log(10.5);
+    j=10.5;
+    $("span.price" ).text (j +'$')
 }
 
 else if(selectedCrust === "chicagodeepdish" || selectedCrust== "flatbreadFocaccia"  && selectedTopping === "vegetables" || selectedTopping=="seafood" && selectedFlavour === "DoubleCheesePizza" || selectedFlavour=="Gourmet" && selectedSize === "Large"){ 
-  console.log(11);
+  j=11;
+  $("span.price" ).text (j +'$')
 }   
 else if(selectedCrust === "neapolitian" || selectedCrust== "newyorkstyle" || selectedCrust=="glutenfree" && selectedTopping === "nuts" || selectedTopping=="HerbsandSpices" && selectedFlavour === "MexicanGreenWave" || selectedFlavour=="PeppyPaneer" || selectedFlavour=="MargheritaPizza" && selectedSize === "Extralarge"){
-  console.log(11.5);
+  j=11.5;
+  $("span.price" ).text (j +'$')
   }
 
   else if(selectedCrust === "neapolitian" || selectedCrust== "newyorkstyle" || selectedCrust=="glutenfree" && selectedTopping === "vegetables" || selectedTopping=="seafood" && selectedFlavour === "DoubleCheesePizza" || selectedFlavour=="Gourmet" && selectedSize === "Extralarge"){ 
-    console.log(12);
+    j=12;
+    $("span.price" ).text (j +'$')
 }
 
 else if(selectedCrust === "chicagodeepdish" || selectedCrust== "flatbreadFocaccia"  && selectedTopping === "vegetables" || selectedTopping=="seafood" && selectedFlavour === "DoubleCheesePizza" || selectedFlavour=="Gourmet" && selectedSize === "Extralarge"){ 
-  console.log(12.5);
-}   
-});
+  j=12.5;
+  $("span.price" ).text (j +'$')
+}  
+
+$("button#yes".click(function(){
+  prompt("enter your name and address");
+  alert("you are going to get it soon");
+})
+);
 
 });
-
+});
 
 
 
