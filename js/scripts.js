@@ -242,6 +242,7 @@ else if(selectedCrust === "chicagodeepdish" || selectedCrust== "flatbreadFocacci
 
 $("button#yes").click(function(){
   prompt("enter your name and address");
+  prompt("Enter your location");
   alert("you are going to get it soon");
   alert("thank you")
 });
