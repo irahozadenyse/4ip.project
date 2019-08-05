@@ -252,12 +252,16 @@ else if(selectedCrust === "chicagodeepdish" || selectedCrust== "flatbreadFocacci
   $("span.price" ).text (j +'$')
 }  
 
-$("button#yes".click(function(){
+$("button#yes").click(function(){
   prompt("enter your name and address");
   alert("you are going to get it soon");
-})
-);
-
+  alert("thank you")
+});
+$("button#no").click(function(){
+  // prompt("enter your name and address");
+  alert("we are not going to deliver pizza to you ");
+  alert("thank you")
+});
 });
 });
 
