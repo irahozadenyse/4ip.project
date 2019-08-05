@@ -7,21 +7,9 @@ function Information(crust, topping,flavour,size) {
   this.size =size;
 }
 
-
-// function Deliver(priCrust,priTopping,priFlavour,priSize){
-//   this.priCrust=priCrust;
-//   this.priTopping=priTopping;
-//   this.priFlavour=priFlavour;
-//   this.priSize=priSize;
-// }
-
  Information.prototype.fullInformation= function() {
   return this.crust + " " + this.topping+"  "+ this.flavour +"  "+ this.size;
  }
-
-//  Deliver.prototype.fullDeliver= function(){
-//    return this.priCrust+" "+this.priTopping+" "+this.priFlavour +" "+this.priSize
-//  }
 
 function resetFields() {
   $("select#sel1").val("");
@@ -107,12 +95,12 @@ $(".img1").hover(function(){
     event.preventDefault();
    j=0;
     selectedCrust = $("select#sel1").val();
-    // console.log(selectedCrust);
+    console.log(selectedCrust);
     var selectedTopping=$("select#sel2").val();
     var selectedFlavour = $("select#sel3").val();
     var selectedSize = $("select#sel4").val();
     var newInformation = new Information(selectedCrust,selectedTopping,selectedFlavour,selectedSize);
-  // console.log(newInformation);
+  console.log(newInformation);
 
    
   $("ol#pizzas").append("<li><span>" + newInformation.fullInformation() + "</span></li>");
@@ -203,8 +191,8 @@ else if(selectedCrust === "neapolitian" || selectedCrust== "newyorkstyle" || sel
   $("span.price" ).text ( j +'$')
 }
 else if(selectedCrust === "chicagodeepdish" || selectedCrust== "flatbreadFocaccia"  && selectedTopping === "vegetables" || selectedTopping=="seafood" && selectedFlavour === "DoubleCheesePizza" || selectedFlavour=="Gourmet" && selectedSize === "Small"){ 
-j=10;
-$("span.price" ).text (j +'$')
+  j=10;
+  $("span.price" ).text (j +'$')
 }
 else if(selectedCrust === "chicagodeepdish" || selectedCrust== "flatbreadFocaccia"  && selectedTopping === "nuts" || selectedTopping=="HerbsandSpices" && selectedFlavour === "DoubleCheesePizza" || selectedFlavour=="Gourmet" && selectedSize === "Small"){ 
   j=8

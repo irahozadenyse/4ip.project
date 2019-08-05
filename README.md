@@ -39,9 +39,6 @@ Requirement include form which show type of pizza he want,alert telling user tha
 * jquery
 * javascripts
 
-## link for this project
-<link file:///home/wecode/Documents/moringa-school-projects/4ip-project/index.html#home>
-
  ## Support and contact details
 #### contact us
 * tel:0783260920
