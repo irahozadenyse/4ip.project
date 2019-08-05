@@ -146,39 +146,39 @@ $(".img1").hover(function(){
 
 
 // )
-// var priCrust={
-//   neapolitian:3,
-//   newyorkstyle:3,
-//   chicagodeepdish:4,
-//   flatbreadFocaccia:4,
-//   glutenfree:3,
-//   veganfriendly:4
+var priCrust={
+  neapolitian:3,
+  newyorkstyle:3,
+  chicagodeepdish:4,
+  flatbreadFocaccia:4,
+  glutenfree:3,
+  veganfriendly:4
 
-// }
+}
 
-// // console.log(priCrust.neapolitian)
-// var priTopping={
-//   vegetables :2,
-//   nuts:1,
-//   meats:3,
-//   cheese :3,
-//   seafood:2,
-//   HerbsandSpices:1
-// }
-// var priFlavour={
-//   DoubleCheesePizza :3,
-//   Gourmet :3,
-//   MexicanGreenWave:1.5,
-//   PeppyPaneer :1.5,
-//   MargheritaPizza :1.5
-// }
-// // console.log(priFlavour.DoubleCheesePizza)
-// var priSize={
-//   Small:1.5,
-//   Medium:3,
-//   Large:4.5,
-//   Extralarge:6
-// }
+// console.log(priCrust.neapolitian)
+var priTopping={
+  vegetables :2,
+  nuts:1,
+  meats:3,
+  cheese :3,
+  seafood:2,
+  HerbsandSpices:1
+}
+var priFlavour={
+  DoubleCheesePizza :3,
+  Gourmet :3,
+  MexicanGreenWave:1.5,
+  PeppyPaneer :1.5,
+  MargheritaPizza :1.5
+}
+// console.log(priFlavour.DoubleCheesePizza)
+var priSize={
+  Small:1.5,
+  Medium:3,
+  Large:4.5,
+  Extralarge:6
+}
  if(selectedCrust === "neapolitian" || selectedCrust== "newyorkstyle" || selectedCrust=="glutenfree" && selectedTopping === "vegetables" || selectedTopping=="seafood" && selectedFlavour === "DoubleCheesePizza" || selectedFlavour=="Gourmet" && selectedSize === "Small"){
   j=7;
   $("span.price" ).text (j +'$')
@@ -250,6 +250,8 @@ $("button#no").click(function(){
   alert("we are not going to deliver pizza to you ");
   alert("thank you")
 });
+
+resetFields();
 });
 });
 
